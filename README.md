@@ -1,3 +1,2 @@
-# projetoteste
-um testezinho de novo
-coisas levis
+# Aulas Git
+anotacoes das aulas
