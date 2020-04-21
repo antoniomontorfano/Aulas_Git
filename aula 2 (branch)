@@ -5,3 +5,5 @@ se enquanto eu tenha feito novos commits na nova branch, eu nao tenha feito nenh
 se eu tiver feito novos commits na branch master tbm, quando eu quiser meter o merge nas branches, o git vai realizar um commit do tipo merge usando o 'recursive strategy' (se quiser saber melhor, procura dps)
 pode ser que tenha um conflio na hora de realizar esse commit do tipo merge, devido a algum arquivo que tenha sido modificado na branch master, por exemplo, mas nao foi modificado na nova branch.
 ai se esse conflito acontecer, o git manda uma msg informando sobre o conflito, vc conserta e segue o baile
+============================
+pra criar uma branch nova, uso o comando 'git branch (nomeio)'.. e para comecar a fazer inits nessa branch, devo chamala no metodo 'git checkout (nome da branch)'.. assim como fizemos com os commits
