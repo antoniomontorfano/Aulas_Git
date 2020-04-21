@@ -1,0 +1,4 @@
+basicamente criei um repositório
+com README, que tu mete um descricao nele
+e pude configurar ele com a opcao do gitignore, que filtra os documentos que vao entrar nesse repositorio
+tambem usei o metodo git clone, que faz a conexao do meu repositorio no github com o meu computador e meu git
