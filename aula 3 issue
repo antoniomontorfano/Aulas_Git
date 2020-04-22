@@ -4,3 +4,14 @@
 		1-cria uma issue falando que tem que criar uma pagina inicial (pelo github)
 		2-cria a pagina inicial pelo git, faz os procedimentos padrao, mete o commit
 		3-cria outra issue falando que criou a pagina inicial e copia o codigo do commit qm que foi realizado
+		4-posso, em vez de criar outra issue so pra falar isso, fazer o seguinte procedimento:
+		    4.1-criar uma nova branch, fazer o procedimento que a issue pediu nessa branch
+			4.2-na hora de fazer o commit, especificar no final da mensagem do commit, o codigo de rastreio da issue (ex: 'criacao aquivo soma #2')
+			4.3-pra fazer o push de uma branch sem ser a mastar, é precciso especificar:
+			    git push origin (nome da branch)
+    -posso desativar o acesso as minhas issues nas settings do meu repositorio no github
+    -em vez de fazer comentarios nas issues, posso  procurar um commit (na issue ou nao) e comentar diretamente no commit
+    -imagina que queremos consertar algo que alguem notificou por meio de uma issue la no github:
+        > podemos por meio do proprio git, indicar que o commit esta sendo feito por causa de uma issue, como vimos anteriormente na sessao 4.2
+        > mas podemos tambem fechar essa issue, caso ja tenhamos resolvido o problema dela, adicionando um 'closes' antes de botar o codigo de rastreio da issue (ex: 'criacao arquivo soma closes #2')
+        
