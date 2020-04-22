@@ -9,4 +9,4 @@
     caso esteja fazendo alteracoes em um arquivo existente, posso fazer o commit e o rastreamento (add) ao mesmo tempo, por meio do 'git commit -am 'mensagem''
     *Duvida
         # eu nao preciso ficar fazendo commit toda hora... posso fazer as alteracoes e apenas adicionar ao meu git, e ficará salvo no meu computador... qnd eu finalizar meu trabalho, meto o commit
-        # o objetivo do commit é mostrar todo o passo a passo feito.. se uma alteracao foi feita em dois dias, eu nao preciso meter o commit nos dois dias.. apenas trackear ja é suficiente, por meio do git add .
+        # o objetivo do commit é mostrar o passo a passo feito.. se uma alteracao foi feita em dois dias, eu nao preciso meter o commit nos dois dias.. apenas trackear ja é suficiente, por meio do git add .
