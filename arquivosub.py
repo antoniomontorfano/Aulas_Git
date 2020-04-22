@@ -1,4 +1,4 @@
 def sub(x,y):
-    #so pra teste
+    print ('irmao, ta dando merda')
     return x-y
 
