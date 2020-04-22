@@ -6,3 +6,7 @@
 *Arquivo Commited
     -apos realizar um commit, posso desfazer (o ultimo feito) usando o comando 'git reset head~' (isso nao vai alterar o conteudo do arquivo... caso eu queira desfazer essas alteracoes que eu fiz, devo, apos o git reset, usar o comando 'git restore '(nome)'')
         posso especificar a quantidade de commits anteriores que quero resetar, adicionando o numero de commits depois do '~' 
+    -pelo que eu procurei, nao é possivel dar unstage em um commit especifico, a menos que voce dê unstage em todos os commits ate la, usando o comando 'git reset (hash do commit)' (ou como vimos na linha anterior)
+        vale notar que dar unstage em todos esses commits nao altera os meus arquivos ate aquele passo, apenas da unstage em td, mas mantem os arquivos como estao, e as partes que foram modificadas desde entao sao marcadas
+    -nenhuma dessas opcoes acima apaga meus arquivos.. se eu quiser resetar meus commits e apagar oq fiz desde entao, devo adicionar a flag --hard
+    
