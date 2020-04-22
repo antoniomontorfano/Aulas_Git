@@ -14,9 +14,9 @@
     *Rebase iterativo
         #qnd tu faz o rebase iterativo, ele ja apaga todas as merges do processo
         -Alterar a ordem dos commits
-            -ao rodarmos o comando 'git rebase -i', uma janela vai abrir e nos podemos simplesmente copiar a linha de um commit e colar onde quisermos que ela apareca no historico desse projeto
+            -ao rodarmos o comando 'git rebase -i (hash do commit de partida)', uma janela vai abrir e nos podemos simplesmente copiar a linha de um commit e colar onde quisermos que ela apareca no historico desse projeto
         -Modificar a mensagem dos commits
-            >usaremos o comando 'git rebase -i' e uma janela vai aparecer na tela.
+            >usaremos o comando 'git rebase -i (hash do commit de partida)' e uma janela vai aparecer na tela.
             >nessa janela vao ter algumas opcoes do que fazer nesse rebase
             >uma delas é o reword, ou r apenas. substituindo o pick por r ali em cima, salvando essa janela e fechando, dps vai abrir outra janela pra que vc modifique a mensagem do commit
         -Unir commits
