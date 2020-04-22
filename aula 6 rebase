@@ -20,5 +20,5 @@
             >nessa janela vao ter algumas opcoes do que fazer nesse rebase
             >uma delas é o reword, ou r apenas. substituindo o pick por r ali em cima, salvando essa janela e fechando, dps vai abrir outra janela pra que vc modifique a mensagem do commit
         -Unir commits
-            >em vez de usar o comando reword, usaremos o squash, para unir um commit anterior ao seu sucessor
+            >em vez de usar o comando reword, usaremos o squash, para unir um commit ao seu commit anterior
             >ao botar s, salvar a janela e fechar, vai abrir outra mostrando as mensagens dos dois commits. vc pode apagar td e botar uma msg so
