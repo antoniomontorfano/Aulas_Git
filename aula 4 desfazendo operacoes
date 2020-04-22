@@ -1,0 +1,12 @@
+### Importante, tomar cuidado ao desfazer quaisquer dessas operacoes dps de fazer um push pro github, pois isso acarretará em alteracoes no project history, e isso nao é bom
+*Arquivo salvo
+    -apos apenar salvar um arquivo (sem rastrear[unstaged] e sem fazer o commit [obviamente]), posso apagar o conteudo desse arquivo usando o metodo 'git checkout (nome do arquivo)'
+*Arquivo Staged
+    -apos adicionar um arquivo (sem fazer o commit), posso meter o unstage nele, por meio da funcao 'git restore --staged '(nome)'' (o nome do arquivo deve estar entre aspas nesse caso)
+*Arquivo Commited
+    -apos realizar um commit, posso desfazer (o ultimo feito) usando o comando 'git reset head~' (isso nao vai alterar o conteudo do arquivo... caso eu queira desfazer essas alteracoes que eu fiz, devo, apos o git reset, usar o comando 'git restore '(nome)'')
+        posso especificar a quantidade de commits anteriores que quero resetar, adicionando o numero de commits depois do '~' 
+    -pelo que eu procurei, nao é possivel dar unstage em um commit especifico, a menos que voce dê unstage em todos os commits ate la, usando o comando 'git reset (hash do commit)' (ou como vimos na linha anterior)
+        vale notar que dar unstage em todos esses commits nao altera os meus arquivos ate aquele passo, apenas da unstage em td, mas mantem os arquivos como estao, e as partes que foram modificadas desde entao sao marcadas
+    -nenhuma dessas opcoes acima apaga meus arquivos.. se eu quiser resetar meus commits e apagar oq fiz desde entao, devo adicionar a flag --hard
+    
