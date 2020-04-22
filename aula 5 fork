@@ -1,0 +1,9 @@
+*Fork
+    -imagina que eu to trabalhando num projeto em que eu preciso importar dados de um repositorio que nao é meu, mas quero usar tudo que tem nesse repositorio e alem disso, ficar por dentro de todas as atualizacoes nele feitas
+    -o fork serve pra eu criar um repositorio identico, e me tornar o dono desse repositorio. nesse meu repositorio eu posso fazer as mudancas que eu quiser, errar a vontade, que nada vai interferir no repositorio upstream (o original)
+    *Como? (criar, clonar o fork, estabelecer ponte do meu repositorio local com o original[remoto], pull no original e push p meu fork)
+        -eu vou entrar no repositorio que eu desejo obter os dados e clicar na opcao 'fork'. nesse momento o github ja vai criar um repositorio igual, mas agr eu sou o dono
+        -quando eu clonar esse repositorio pro meu computador, eu vou ter acesso apenas ao conteudo atual do repositorio upstream, p smp, independente as atualizacoes que sejam feitas no upstream.
+        -se eu quiser sincronizar as atualizacoes, para que eu fique em dia com elas, devo primeiramente estabelecer uma ponte com o repositorio original, usando o comando 'git add remote upstream (link do repositorio original)' (o upstream é na vdd o nome que eu dei pra ele.. poderia chamar de carlos, mas o padrao é upstream)
+        -dps que eu estabeleci uma ponte entre o meu repositorio local e o repositorio original (remoto), posso fazer um pull desse repositorio qnd quiser, usando o comando 'git pull upstream master' (upstream é o nome que eu dei pro meu repositorio remoto e master é a branch que eu selecionei)
+        -agr que eu tenho o conteudo do repositorio original, posso mandar ele pro meu repositorio fork, usando o comando 'git push' simplesmente
