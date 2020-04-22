@@ -1,17 +1,32 @@
 *issue:
-	-uma issue serve pra adicionar comentarios pra auxiliar o desenvolvimento do projeto
-	-ex:
+	# uma issue serve pra adicionar comentarios pra auxiliar o desenvolvimento do projeto
+	-ex de uso:
 		1-cria uma issue falando que tem que criar uma pagina inicial (pelo github)
 		2-cria a pagina inicial pelo git, faz os procedimentos padrao, mete o commit
 		3-cria outra issue falando que criou a pagina inicial e copia o codigo do commit qm que foi realizado
 		4-posso, em vez de criar outra issue so pra falar isso, fazer o seguinte procedimento:
-		    4.1-criar uma nova branch, fazer o procedimento que a issue pediu nessa branch
+		    4.1-criar uma nova branch, fazer o procedimento que a issue pediu nessa branch (nao é necessario criar uma nova branch)
 			4.2-na hora de fazer o commit, especificar no final da mensagem do commit, o codigo de rastreio da issue (ex: 'criacao aquivo soma #2')
-			4.3-pra fazer o push de uma branch sem ser a mastar, é precciso especificar:
+			4.3-pra fazer o push de uma branch sem ser a master, é preciso especificar:
 			    git push origin (nome da branch)
-    -posso desativar o acesso as minhas issues nas settings do meu repositorio no github
-    -em vez de fazer comentarios nas issues, posso  procurar um commit (na issue ou nao) e comentar diretamente no commit, e ate msm diretamente na linha especifica que desejo comentar sobre
-    -imagina que queremos consertar algo que alguem notificou por meio de uma issue la no github:
-        > podemos por meio do proprio git, indicar que o commit esta sendo feito por causa de uma issue, como vimos anteriormente na sessao 4.2
-        > mas podemos tambem fechar essa issue, caso ja tenhamos resolvido o problema dela, adicionando um 'closes' antes de botar o codigo de rastreio da issue (ex: 'criacao arquivo soma closes #2')
-    
+    *Desativando Issues
+		-posso desativar o acesso as minhas issues nas settings do meu repositorio no github
+    *Comentarios em commits
+		-em vez de fazer comentarios nas issues, posso  procurar um commit (na issue ou nao) e comentar diretamente no commit, e ate msm diretamente na linha especifica que desejo comentar sobre
+    *Closes Issue (ou Fixes [que faz mais sentido quando o objetivo foi consertar um problema])
+		-imagina que queremos consertar algo que alguem notificou por meio de uma issue la no github:
+        	> podemos por meio do proprio git, indicar que o commit esta sendo feito por causa de uma issue, como vimos anteriormente na sessao 4.2
+        	> mas podemos tambem fechar essa issue, caso ja tenhamos resolvido o problema dela, adicionando um 'closes' antes de botar o codigo de rastreio da issue (ex: 'criacao arquivo soma closes #2')
+    *Label
+		-para facilitar a visualizacao das issues no meu github, posso adicionar labels a elas (labels de bug, new feature, enhancement, help wanted etc)
+		-ai na pagina de issues, tem como filtrar pelas labels que eu quero
+	*Issues colaborativas
+		-qnd outro usuario faz um comentario na minha issue, ou me marca em qualquer outro lugar do github (igual o insta, @antoniomontorfano), eu recebo um email e posso responder diretamente do meu email, sem entrar no github, apenas respondendo ao email que informa que eu fui respondido ou mencionado
+	*Issues assignees
+		-posso marcar quem eu quero que receba as atualizacoes sobre as issues
+	*Milestones
+		-milestones sao agrupamentos de issues, que servem pra monitorar o andamento do projeto
+		-so o criador do repositorio pode criar milestones (ou talvez indicar quem pode criar,  nao sei)
+		-seleciono as issues que eu quero agrupar em uma milestone, defino um prazo pra ela, e a cada issue consertada ou fechada, o milestone indica quantos porcentos foram concluidos
+		
+	
