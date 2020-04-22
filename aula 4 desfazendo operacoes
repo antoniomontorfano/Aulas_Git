@@ -1,0 +1,3 @@
+### Importante, tomar cuidado ao desfazer quaisquer dessas operacoes dps de fazer um push pro github, pois isso acarretará em alteracoes no project history, e isso nao é bom
+*Arquivo salvo
+    -apos apenar salvar um arquivo (sem rastrear[unstaged] e sem fazer o commit [obviamente]), posso apagar o conteudo desse arquivo usando o metodo 'git checkout (nome do arquivo)'
