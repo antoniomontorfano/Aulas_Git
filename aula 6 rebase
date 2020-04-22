@@ -1,0 +1,24 @@
+*Rebase
+    #modificar o project history
+        -ele deixa o project history mais limpo.
+        -qnd fazemos um merge de uma branch, usando o recursive strategy, um novo commit é inserido, indicando aquele merge.
+        -o rebase serve pra pegarmos a base dessa nova branch e passar pra frente na branch master, de modo que nao haja nenhum commit paralelo com essa nova branch e assim possa ser feito um merge do tipo fastforward
+        -nao é aconselhavel usar o rebase em uma branch publica (que ja foi mandada pro github), pois o rebase altera a hash dos commits, e isso pode confundir mta coisa
+    *Usando o rebase
+        -so entrar na branch que desejo fazer o rebase e meter 'git rebase master'
+        -entrar na master e fazer o merge
+    *Conlfito no rebase
+        -se houver conflito, o procedimento é parecido com o merge.
+        -vamos resolver o conflito no arquivo e aparecerá na mensagem de conflito as opcoes pra gente seguir
+        -pra continuar o rebase, so meter 'git rebase --continue' e segue o baile
+    *Rebase iterativo
+        #qnd tu faz o rebase iterativo, ele ja apaga todas as merges do processo
+        -Alterar a ordem dos commits
+            -ao rodarmos o comando 'git rebase -i (hash do commit de partida)', uma janela vai abrir e nos podemos simplesmente copiar a linha de um commit e colar onde quisermos que ela apareca no historico desse projeto
+        -Modificar a mensagem dos commits
+            >usaremos o comando 'git rebase -i (hash do commit de partida)' e uma janela vai aparecer na tela.
+            >nessa janela vao ter algumas opcoes do que fazer nesse rebase
+            >uma delas é o reword, ou r apenas. substituindo o pick por r ali em cima, salvando essa janela e fechando, dps vai abrir outra janela pra que vc modifique a mensagem do commit
+        -Unir commits
+            >em vez de usar o comando reword, usaremos o squash, para unir um commit anterior ao seu sucessor
+            >ao botar s, salvar a janela e fechar, vai abrir outra mostrando as mensagens dos dois commits. vc pode apagar td e botar uma msg so
