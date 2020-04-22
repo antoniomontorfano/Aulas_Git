@@ -1,0 +1,6 @@
+*issue:
+	-uma issue serve pra adicionar comentarios pra auxiliar o desenvolvimento do projeto
+	-ex:
+		1-cria uma issue falando que tem que criar uma pagina inicial (pelo github)
+		2-cria a pagina inicial pelo git, faz os procedimentos padrao, mete o commit
+		3-cria outra issue falando que criou a pagina inicial e copia o codigo do commit qm que foi realizado
