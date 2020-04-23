@@ -1,0 +1,23 @@
+*Pull request
+    #como o nome diz, é um pedido para fazer um pull em um repositorio upstream, a partir do seu repositorio fork
+    #DICA importante. quando estiver fazendo uso de um projeto em fork, sempre fazer suas alteracoes (e pull request consequentemente) em uma branch alternativa, para evitar conflitos com outras pessoas do projeto
+    -enviar alteracoes para serem incorporadas a um projeto
+        dps de criar um repositorio em fork, clonar ele p meu git, fazer as alteracoes em uma branch alternativa, adicionar, commitar e fazer o push de volta pro fork, posso agoora enviar um pull request pro repositorio upstream, pelo github.
+        caso ele seja aceito, o dono do repositorio upstream podera fazer o merge pelo proprio github, integrando o codigo ao projeto principal
+    *Conflito
+        -caso haja um conflito (dara pra ver quando eu fizer meu pull request la no github), eu tenho que puxar as informacoes do upstream de novo pro meu repositorio local, resolver o conflito e fazer o push p fork de novo
+            **importante! note que ao refazer esse push da minha branch (que fiz o pull request), pro meu fork, esse push ja vai direto pro meu pull request, pois ele fica associado à minha branch
+        -*muitos donos de repositorios nao gostam que o historico do projeto fique poluido com varias merges, por isso, é sugerivel que, caso haja conflito, resolvamos com rebase
+            COMO RESOLVER COM O rebase
+            apos fazermos o pull request e identificarmos o conflito, vamos voltar pro nosso git e, em vez de fazermos outro pull pela mesma branch que mandamos o pull request (oq causaria no merge que nao queremos), vamos criar outra branch a partir dessa
+                note que poderiamos ate fazer um rebase por essa mesma branch do pull request, mas como ja a tornamos publicas no pull request, isso acarretaria em uma possivel mudanca no project history
+            agr que ja criamos outra branch a partir dessa, podemos realizar o rebase nessa branch, cancelar o pull request anterior e fazer outra solicitacao pull request.
+            DESSA FORMA: dps de criada essa nova branch a partir da branch do pull request, vamos realizar o pull request mas agr especificando que sera realizado um rebase ('git pull upstream master --rebase')
+            agr resolveremos o conflito, adicionaremos e finalizaremos o rebase com o comando 'git rebase --continue'
+            entao podemos fazer o push dessa nova branch, entrar no github, fechar o pull request que tinhamos feito antes e avisar que vamos fazer outro
+            podemos ver o codigo desse pull request que encerramos, e na descricao do novo pull request, botar algo do tipo ('continuando o pull request  #6'), e assim vc cria um link entre esses 2 pull requests
+        -tambem podemos apagar a merge que usamos pra fazer o pull request direto do github, p facilitar
+    *Limpeza pos fork workflow
+        -limpamos nossas branches usando o comando 'git branch -D (nome branch)' (D maiusculo pra deletar independente delas terem ter sidos adicionadas ja a master ou nao)
+        -e limpados as branches do nosso github tbm, usando o codigo 'git push -d origin (nome branch)'
+        p checar nossas branches, so usar 'git branch -v'       
