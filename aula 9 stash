@@ -1,3 +1,35 @@
 *Stash
-    #basicamente ele separa todos os arquivos que nao foram trackeados(add) ainda (arquivos que nao estao pronto pra commit ainda[arquivos que eu nao fiz o add ainda obviamente]), pra que eu termine um outro arquivo, faca o commit, e dps eu traga os arquivos do stash novamente e finalize eles
-
+    #basicamente ele separa todos os arquivos que nao foram commitados ainda, pra que eu termine um outro arquivo, faca o commit, e dps eu traga os arquivos do stash novamente e finalize eles
+    #esses arquivos deve estar adicionados
+    *Como
+        tendo meus arquivos salvos (o arquivo ja deve ter sido rastreado alguma vez), uso o comando 'git stash' pra separá-los
+            para mandar pra stash os meus arquivos que nao foram nem rastreados tbm, tenho q usar o comando 'git stash -u'
+        pra trazê-los de volta, uso o comando 'git stash apply' ou 'git stash pop'
+        posso visualizar oq esta no stash com o comando 'git stash show --patch'
+    *keep-index
+        se eu so usar o comando 'git stash', o git vai mandar td que foi rastreado mas que nao foi commitado ainda pra stash (tanto os arquivos stageds, qnt os unstageds)
+        para mandar pra stash somente os arquivos unstaged (que nao foram adicionados na stage ainda[add]), devo usar a flag --kepp-index, ou seja, o comando 'git stash --keep-index'
+OBS SOBRE ARQUIVOS STAGEDS
+    para excluir arquivos stageds, devo primeiro fazer o unstage como aprendemos na aula 4
+    *stash antes do pull
+        pode ser que antes de eu fizer o pull de um repositorio, eu esteja modificando um arquivo (sem commitar), e isso impossibilitara o pull 
+        para resolver esse problema, posso usar o git stash para separar esse arquivo, fazer o pull, trazer o arquivo de volta e ai sim resolver o conflito no meu git
+    *metodos do stash
+        *git stash list
+            -mostra oq eu tenho no stash
+        *git stash apply
+            -mostra o ultimo stash que eu fiz, mas nao o remove da lista  (fui ver a lista aq e tava cheio de stash kk)
+        *git stash drop
+            -remove um stash da minha lista (qnd nao formos mais utilizar esse stash, nos usa)(se eu nao especificar o stash que eu quero com o codigo que eu posso ver na minha list, ele vai remover o ultimo stash adicionado)
+            -ex de especificacao (serve p todos): git stash drop stash@{6}
+        *git stash pop
+            -é basicamente 'git stash apply && git stash drop'
+        *git stash save (mensagem)
+            -p salvar o stash com uma mensaggem customizada
+        *git stash show --patch
+            -mostrar o conteudo do meu ultimo stash
+        *git stash list --stat
+            -mostar as alteracoes em todos os stashes
+        *git stash -u
+            -para mandar pra stash ate o arquivos que nm foram rastreados ainda
+        
