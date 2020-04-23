@@ -1,0 +1,3 @@
+*Stash
+    #basicamente ele separa todos os arquivos que nao foram trackeados(add) ainda (arquivos que nao estao pronto pra commit ainda[arquivos que eu nao fiz o add ainda obviamente]), pra que eu termine um outro arquivo, faca o commit, e dps eu traga os arquivos do stash novamente e finalize eles
+
