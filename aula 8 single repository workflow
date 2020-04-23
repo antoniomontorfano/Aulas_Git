@@ -17,4 +17,3 @@
     *deploy
         -vagabundo costuma criar uma branch intermediaria entre a master e uma que vc cria p alteracoes, que é chamada de branch deploy.
         -no repositorio, o dono tem a opcao tambem de ja selecionar a branch default comom sendo outra, em vez da master
-        
