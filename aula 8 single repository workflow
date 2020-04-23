@@ -1,0 +1,20 @@
+*ou Github workflow
+    #é indicado pra quando tem varios colaboradores ajudando num projeto, e por isso, cada um criaria um fork
+    #mas dessa forma ficaria mt dificl de eu visualizar oq cada um estaria fazendo toda hr
+    #oq esse modelo de workflow sugere é que em vez de cada um criar um fork é:
+        todo mundo clona o 'upstream'
+        cria uma nova branch, add e commit
+        mete o push pro github (mas lembre que ainda é uma branch alternativa)
+            como estou fazendo um push pra um repositorio que nao é meu, o pull request entra no jogo (se o repositorio for privado, o dono deve me adicionar como colaborador)
+        faz um pull request dessa branch
+        OBS: o dono do repositorio pode restringir algumas branches pelo github, tornando impossivel alterar a master por exemplo, sendo necessario a criacao de outra branch e uma solicitacao pull request
+            alem disso, o dono pode tambem impedir que um colaborador, sem ser ele, faca uma merge do pull request. (ate pq nao faria sentido vc fazer um pull request e concluir esse pull request)
+    *branches
+        -posso visualizar as branchs locais e as branches remotas usando o codigo 'git branch -a'
+        -posso acessar uma branch remota, msm que ela nao esteja no meu repositorio local, da msm forma que eu acesso qualquer outra branch, usando 'git checkout (nomebranch)'
+    *rebase
+        -apos acessar essa branch remota, fazer a alteracao e fazer o push, pode haver um conflito no meio do caminho, por isso posso fazer um rebase normalmente usando 'git pull --rebase' p msm branch, acertar o conflito, add e git rebase --continue'
+    *deploy
+        -vagabundo costuma criar uma branch intermediaria entre a master e uma que vc cria p alteracoes, que é chamada de branch deploy.
+        -no repositorio, o dono tem a opcao tambem de ja selecionar a branch default comom sendo outra, em vez da master
+        
