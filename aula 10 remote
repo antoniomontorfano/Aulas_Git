@@ -1,0 +1,10 @@
+*Remote add
+    eu posso criar um repositorio local, fazer oq eu quiser e so dps criar um repositorio no hub e mandar td pra la
+    o processo se assemelha com o processo de acesso ao upstream no fork
+    basta eu, qnd criar o repositorio no github, copiar o link de la e fazer o seguinte:
+        rodar o comando 'git remote add origin (link)'
+            o origin é o nome padrao, mas posso chamar de carlos
+        a primeira vez que eu fizer um push, tenho que fazer usando o comando 'git push -u origin master'
+            origin p especificar o repositorio q quero mandar
+            master p especificar a branch que quero mandar
+            -u pra tornar essas escolhas, as escolhas padroes
